@@ -9,3 +9,7 @@ const imageSquash = () => {
 }
 
 gulp.task("imgSquash", imageSquash);
+
+gulp.task("watch", () => {
+    gulp.watch("./img/*", imageSquash);
+})
