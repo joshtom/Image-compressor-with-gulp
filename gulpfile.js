@@ -7,3 +7,5 @@ const imageSquash = () => {
     .pipe(gulp.dest("./minifies/images/"));
     
 }
+
+gulp.task("imgSquash", imageSquash);
