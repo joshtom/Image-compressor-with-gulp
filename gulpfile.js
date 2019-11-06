@@ -12,4 +12,6 @@ gulp.task("imgSquash", imageSquash);
 
 gulp.task("watch", () => {
     gulp.watch("./img/*", imageSquash);
-})
+});
+
+gulp.task("default", gulp.series("imgSquash", "watch"));
