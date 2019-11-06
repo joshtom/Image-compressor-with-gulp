@@ -4,7 +4,7 @@ const imagemin = require("gulp-imagemin");
 const imageSquash = () => {
     return gulp.src("./img/*")
     .pipe(imagemin())
-    .pipe(gulp.dest("./minifies/images/"));
+    .pipe(gulp.dest("./minified/images/"));
     
 }
 
